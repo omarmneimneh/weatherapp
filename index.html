@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="innerbanner">
+            <div class="logo">
+                <h2>Weather Widget</h2>
+            </div>
+        </div>
+    </div>
+    <div class="current">
+        <div class="basicInfo">
+            <div class="currentWeather">
+                <h3 id="currentAtmosphere"></h3>
+                <h3 id="currentCity"></h3>
+                <h1 id="currentTemp"></h1>
+            </div>
+        
+            <input type="text" placeholder="City Name" id="that">
+            <button id="submit">
+                <svg viewBox="0 0 1024 1024"><path class="path1" 
+                    d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 
+                    55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 
+                    140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 
+                    79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 
+                    218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 
+                    218.455z"></path></svg>
+            </button>
+            <div class="unitthingy">
+                <button id="unitswitcher">Switch Units</button>
+            </div>
+        </div>
+
+        <div class="micros">
+            <div class="feelsLike">
+                <p>Feels Like</p>
+                <p id="feelslike"></p>
+            </div>
+
+            <div class="humidityBox">
+                <p>Humidity</p>
+                <p id="humidity"></p>
+            </div>
+
+            <div class="wind">
+                <p>Wind</p>
+                <p id="windspeed"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/omarmneimneh"><i class="fab fa-github" style="font-size: 24px; margin-right: .5rem;"></i>Check me out on Github</a>
+    </div>
+    <script src="https://kit.fontawesome.com/c09281f611.js" crossorigin="anonymous"></script>
+</body>
+</html>
