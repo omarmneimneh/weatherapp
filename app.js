@@ -33,7 +33,7 @@ async function getcoords(city){
     hitAPI(long, lat, unit);
 }
 async function hitAPI(lon, lat, unit){
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=${unit}&appid=${key}`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=${unit}&appid=${key}`, {mode:"cors"});
     const data = await response.json();
     feelsLike(data.current.feels_like);
     currentTempSetter(data.current.temp);
